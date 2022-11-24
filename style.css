@@ -1,50 +1,56 @@
-ul {
-    margin-left: 500px;
-    list-style: none;
+body {
+    width: 204px;
 }
 
-ul> li {
+p {
+    margin-left: 20px;
+}
+
+.poetry > p {
     position: relative;
 }
 
-ul> li::before {
+.poetry > p::before {
     content: "";
     position: absolute;
     top: 0px;
-    left: -25px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-}
-
-ul> li:nth-child(1)::before {
-    background-color: #FF0000;
-}
-
-ul> li:nth-child(2)::before {
-    background-color: #FFB800;
-}
-
-ul> li:nth-child(3)::before {
-    background-color: #FAFF00;
-}
-
-ul> li:nth-child(4)::before {
-    background-color: #52FF00;
-}
-ul> li:nth-child(5)::before {
-    background-color: #00FFF0;
-}
-
-ul> li:nth-child(6)::before {
-    background-color: #0029FF;
-}
-
-ul> li:nth-child(7)::before {
-    background-color: #7000FF;
+    left: -20px;
 }
 
 
-li {
-    margin-bottom: 8px;
+.poetry > p:nth-child(1)::before {
+    content: "1-";
 }
+
+.poetry > p:nth-child(2)::before {
+    content: "2-";
+}
+
+.poetry > p:nth-child(3)::before {
+    content: "3-";
+}
+
+.poetry > p:nth-child(4)::before {
+    content: "4-";
+}
+
+.poetry > p:nth-child(5)::before {
+    content: "5-";
+}
+
+.poetry > p:nth-child(6)::before {
+    content: "6-";
+}
+
+
+
+/* body {
+    counter-reset: geekov;
+}
+
+p:before {
+    counter-increment: geekov;
+    content: counter(geekov) "-";
+    font-weight: 700;
+    margin-right: 10px;
+} */
